@@ -12,7 +12,7 @@ try{
 	module.exports = require('./component');
 	module.exports.Mixin = require('./mixin');
 	module.exports.Toolbar = require('./toolbar');
-	var quill = require('quill')
+	var quill = require('quill');
 	var Parchment = quill.import('parchment');
 	var FontStyle = new Parchment.Attributor.Style('size', 'font-size', { scope: Parchment.Scope.INLINE });
 	var FontFamilyStyle = new Parchment.Attributor.Style('font', 'font-family', { scope: Parchment.Scope.INLINE });
@@ -26,9 +26,9 @@ catch(e){
 	 * This will be solved during client side rendering.
 	 */
 	//console.log(e)
-	var React = require('react')
-	module.exports = React.createClass({ render: ()=>(false)})
-	module.exports.Mixin = ""
-	module.exports.Toolbar = ""
+	var React = require('react');
+	module.exports = React.createClass({ render: ()=>(false)});
+	module.exports.Mixin = "";
+	module.exports.Toolbar = "";
 	module.exports.Quill = "";
 }
