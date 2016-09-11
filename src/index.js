@@ -27,7 +27,7 @@ catch(e){
 	 */
 	//console.log(e)
 	var React = require('react');
-	module.exports = React.createClass({ render: ()=>(false)});
+	module.exports = module.exports = React.createClass({ render: function(){ return false; } });
 	module.exports.Mixin = "";
 	module.exports.Toolbar = "";
 	module.exports.Quill = "";
